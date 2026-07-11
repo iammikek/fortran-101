@@ -153,6 +153,7 @@ CONTAINER_NAME=fortran-101-test make test
 | [express-101](https://github.com/iammikek/express-101) | 8007 | API-only | Express, Vitest |
 | [go-101](https://github.com/iammikek/go-101) | 8000* | API-only | Gin, GORM |
 | [**fortran-101**](https://github.com/iammikek/fortran-101) | **8008** | API-only | Fortran, fpm, SQLite |
+| [java-101](https://github.com/iammikek/java-101) | 8009 | API-only | Spring Boot, JPA, Flyway |
 
 \* go-101 also uses port 8000 — run one backend at a time, or change port in config.
 
@@ -167,7 +168,7 @@ CONTAINER_NAME=fortran-101-test make test
 ### Suggested pairing
 
 - **Learning the API:** [fastAPI-101](https://github.com/iammikek/fastAPI-101) (8000) + [react-101](https://github.com/iammikek/react-101)
-- **Compare compiled backends:** fortran-101 (8008) vs [go-101](https://github.com/iammikek/go-101)
+- **Compare compiled backends:** fortran-101 (8008) vs [go-101](https://github.com/iammikek/go-101) or [java-101](https://github.com/iammikek/java-101) (8009)
 - **Compare Node APIs:** [nest-101](https://github.com/iammikek/nest-101) (8006) or [express-101](https://github.com/iammikek/express-101) (8007)
 
 Catalogue: [automica.io/learning-101](https://automica.io/learning-101.html)
