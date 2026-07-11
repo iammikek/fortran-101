@@ -5,7 +5,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # shellcheck source=common.sh
 source "${SCRIPT_DIR}/common.sh"
 
-wait_for_health
 reset_db
 
 assert_status POST /auth/register 201 '{"email":"alice@example.com","password":"password123"}' 'application/json'

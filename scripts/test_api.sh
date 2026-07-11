@@ -15,10 +15,10 @@ TEST_SCRIPTS=(
   test_categories.sh
   test_items_create.sh
   test_items_read.sh
-  test_items_delete.sh
   test_items_list.sh
-  test_items_validation.sh
   test_items_update.sh
+  test_items_delete.sh
+  test_items_validation.sh
   test_items_stats.sh
 )
 
