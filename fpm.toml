@@ -1,12 +1,20 @@
 name = "fortran-101"
-version = "0.1.0"
+version = "0.2.0"
 license = "MIT"
 author = "Mike Karthauser"
 description = "*-101 items API in modern Fortran (fpm, SQLite, JWT)"
 
 [build]
+link = ["sqlite3", "crypto", "crypt"]
 
 [[executable]]
 name = "fortran-101"
 source-dir = "src"
 main = "app.f90"
+
+[features]
+release.flags = "-O3"
+release.gfortran.flags = "-ffree-line-length-none"
+
+[profiles]
+release = ["release"]

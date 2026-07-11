@@ -16,7 +16,6 @@ jobs:
         run: |
           docker build -t fortran-101:test .
           docker run -d --name fortran-101-test -p 8008:8008 fortran-101:test
-          sleep 2
-          chmod +x scripts/test_api.sh
-          BASE_URL=http://127.0.0.1:8008 ./scripts/test_api.sh
+          chmod +x scripts/test_api.sh scripts/tests/*.sh
+          CONTAINER_NAME=fortran-101-test BASE_URL=http://127.0.0.1:8008 ./scripts/test_api.sh
           docker rm -f fortran-101-test
