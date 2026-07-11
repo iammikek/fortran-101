@@ -1,0 +1,12 @@
+name = "fortran-101"
+version = "0.1.0"
+license = "MIT"
+author = "Mike Karthauser"
+description = "*-101 items API in modern Fortran (fpm, SQLite, JWT)"
+
+[build]
+
+[[executable]]
+name = "fortran-101"
+source-dir = "src"
+main = "app.f90"

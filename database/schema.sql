@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE,
+    description TEXT
+);
+
+CREATE TABLE IF NOT EXISTS items (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    description TEXT,
+    price TEXT NOT NULL,
+    category_id INTEGER,
+    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
+);

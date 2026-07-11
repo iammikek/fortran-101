@@ -1,0 +1,8 @@
+build/
+*.mod
+*.o
+*.a
+database/*.sqlite
+database/*.sqlite-journal
+.env
+.DS_Store
