@@ -157,6 +157,7 @@ CONTAINER_NAME=fortran-101-test make test
 | [dotNet-101](https://github.com/iammikek/dotNet-101) | 8010 | API-only | ASP.NET Core, xUnit |
 | [flask-101](https://github.com/iammikek/flask-101) | 8011 | API-only | Flask, pytest |
 | [rails-101](https://github.com/iammikek/rails-101) | 8012 | Monolith | Rails + shop |
+| [geblang-101](https://github.com/iammikek/geblang-101) | 8013 | API-only | Geblang, SQLite |
 \* go-101 also uses port 8000 — run one backend at a time, or change port in config.
 
 ### Other clients
