@@ -159,6 +159,7 @@ CONTAINER_NAME=fortran-101-test make test
 | [rails-101](https://github.com/iammikek/rails-101) | 8012 | Monolith | Rails + shop |
 | [geblang-101](https://github.com/iammikek/geblang-101) | 8013 | API-only | Geblang, SQLite |
 | [gebweb-101](https://github.com/iammikek/gebweb-101) | 8014 | API-only | Geblang + Gebweb |
+| [sinatra-101](https://github.com/iammikek/sinatra-101)           | 8015  | API-only | Sinatra, RSpec               |
 \* go-101 also uses port 8000 — run one backend at a time, or change port in config.
 
 ### Other clients
